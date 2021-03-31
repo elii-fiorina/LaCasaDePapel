@@ -1,0 +1,627 @@
+*{
+    margin: 0; padding: 0;
+    letter-spacing: 1px; 
+}
+body{
+    background-color: #121212;
+    
+}
+.main{
+    background-image: url("../img/logo-Recuperado.jpg");
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;  
+}
+header img, header figure{ /*Logo*/
+    width: 200px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-left: 40px;
+}
+header nav{ /*Menu*/
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end:3;
+}
+header ul{ /*Menu*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+header li{ /*Menu*/
+    list-style-type: none;
+    margin-left: 20px;
+    background-color: #bc2f2b;
+}
+header a{ /*Menu*/
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;  
+    text-transform: uppercase;   
+    font-weight: bold;
+}
+header a:hover, header li:hover{ /*Menu al deslizar encima*/
+    color: #bc2f2b;
+    background-color: rgba(255, 255, 255, 0.082);
+    transform: scale(1.1);
+}
+
+.encabezado{ /*Foto de portada*/
+    height: 450px;
+    width: auto;
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    background-attachment: fixed;   
+}
+h1{ /*Fotmato de titulos principales*/
+    color: white;
+    font-size: 40px;
+    letter-spacing: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin: 40px;
+    text-transform: uppercase;
+    border-left: 5px solid #bc2f2b;
+    padding-left: 10px;
+}
+#Resena{ /*Seccion de reseña*/
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#Resena figure, #Resena img{  /*Posicion y tamaño de imagen de reseña*/
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end:8;
+    width: 353px;
+}
+#p1, #p2{ /*Parrafos Reseña*/
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: justify;
+}
+#p1{  
+    grid-row-start: 1;
+    grid-row-end:3;
+    letter-spacing: 2px;
+}
+#p2{
+    grid-row-start:3;
+    grid-row-end:8; 
+    margin-top: 5px;
+}
+#Resena li, #Resena ul{ /*Lista de personajes*/
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start:2;
+    grid-row-end:8; 
+    margin-left: 30px;
+    list-style-image:url("../img/icono1.png") ;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+#Resena h2{ /*Titulo lista de personajes*/
+    color: white;
+    text-align: justify;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end:2; 
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+#capitulos{/*Seccion capitulos*/
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    margin:40px ;
+}
+.Capitulo1, .Capitulo2, .Capitulo3, .Capitulo4{  /*Posicion capitulos*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-right:  15px;
+
+}
+.Capitulo1{
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.Capitulo2{
+    grid-column-start: 5 ;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.Capitulo3{
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 12;
+   
+}
+.Capitulo4{
+    grid-column-start: 5 ;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 12;
+   
+}
+#capitulos img, #capitulos figure{ /*Imagenes capitulos*/
+    width: 300px;
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    padding-right: 10px;
+}
+#capitulos a{ /*Boton ampliar*/
+    font-family: 'Oswald', sans-serif;
+    background-color: #bc2f2b;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-bottom: 30px;
+    font-size: 15px;
+    width: 90px;
+    height: 20px;
+    padding: 5px;
+    
+}
+#capitulos a:hover{ /*Al deslizar encima de ampliar*/
+    color: #bc2f2b;
+    background-color: rgba(255, 255, 255, 0.082);
+    transform: scale(1.1);
+    text-decoration: none;
+}
+h2{ /*Titulos h2*/
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    letter-spacing: 7px;
+    font-size: 25px;
+}
+.tituloCap{ /*Titulos de capitulos*/
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    border-bottom: 1px solid #bc2f2b;
+    text-align: left;
+}
+.textoCap{ /*Texto capitulos*/
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+#opiniones{ /*Seccion opiniones*/
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin:40px ;
+}
+#opiniones img{ /*Imagenes de opiniones*/
+    width: 100px;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+.fotoOpinionH{ /*Imagenes opiniones horizontales*/
+    width: 100px;
+    border-radius: 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.Opinion1, .Opinion2, .Opinion3{ /*Opiniones verticales 1, 2 y 3*/
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-family: 'Oswald', sans-serif;
+    background-color: #a0272770;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    
+}
+.Opinion1:hover, .Opinion2:hover, .Opinion3:hover{ /*Al deslizar en opiniones 1, 2 y 3*/
+background-color: #504e4e9d ;
+
+} 
+.Opinion4, .Opinion5, .Opinion6{ /*Opiniones horizontales 4, 5 y 6*/
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.Opinion4:hover, .Opinion5:hover, .Opinion6:hover{ /*Al deslizar en opiniones 4, 5 y 6*/
+    background-color: #504e4e9d ;
+
+}  
+p, strong{ /*Formatos de p y strong*/
+    letter-spacing: 2px;
+    text-align: center;
+}
+.Opinion1{ /*Posicion opinion 1*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    margin-right:  15px;
+}
+.Opinion2{ /*Posicion opinion 2*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    margin-right:  15px; 
+}
+.Opinion3{ /*Posicion opinion 3*/
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    margin-right:  15px; 
+}
+.sOpinionh{ /*Nombre opiniones horizontales*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+    margin-left: 10px;
+
+}
+.pOpinionh{ /*Edad de opiniones horizontales*/
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.qOpinionh{ /*Texto de opiniones horizontales*/
+    margin: 10px;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+#encabezadoDetalle{ /*Encabezado Detalle*/
+    height: 450px;
+    width: auto;
+    background-image: url("../img/capitulo2.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(8,1fr);
+
+}
+#encabezadoDetalle h1{ /*Titulo encabezado*/
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 70px;
+    
+}
+#encabezadoDetalle h1, #encabezadoDetalle p, #encabezadoDetalle strong{ /*Texto encabezado*/
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    opacity: 70%;
+    
+}
+#encabezadoDetalle strong{ /*Posicion strong encabezado*/
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    color: #bc2f2b;
+}
+#encabezadoDetalle p{ /*Posicion parrafo encabezado*/
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    
+}
+#encabezadoDetalle p, #encabezadoDetalle strong{ /*Tamaño y margen texto encabezado*/
+
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+}
+#resumen{ /*Seccion resumen*/
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    margin: 40px;
+}
+#resumen img, #resumen figure{ /*Imagen y contenedor de resumen*/
+    width: 366px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+#resumen article{ /*Posicion texto de resumen*/
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7; 
+    color: white;
+    margin-left: 20px;
+}
+#resumen aside{ /*Posicion tabla de ranking*/
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 7; 
+    color: white;
+
+}
+
+#resumen p, #resumen span, #resumen li{ /*Formato texto resumn*/
+    list-style-image: url("../img/reloj.png");
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;
+}
+
+#resumen li{ /*Posicion duracion del episodio*/
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    margin-left: 40px;
+}
+#resumen p{ /*Posicion del parrafo de resumen*/
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5; 
+    margin-top: 15px;
+}
+#resumen li, #resumen span{ /*Tamaño y formato del texto*/
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-left: 40px;
+    font-weight: bold; 
+}
+table{ /*Formato de la tabla*/
+    margin-left: 20px;
+    border-collapse: separate;  
+    border-spacing: 10px;  
+    width: 360px;
+}
+#resumen tr{ /*Color de fondo de tabla*/
+    background-color: #bc302b9f; 
+
+}
+#resumen tr:hover{ /*Cambio de color al delizar por encima de la tabla*/
+    background-color: rgba(255, 255, 255, 0.247);
+}
+
+#resumen caption{ /*Titulo de la tabla*/
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+
+
+}
+#resumen td{ /*Texto de la tabla*/
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+#galeria{ /*Contenedor imagenes*/
+    display: block;
+    margin: 40px;
+}
+#galeria img{ /*Tamaño y margen de imagenes*/
+    width: 250px;
+    margin-right: 15px;
+}
+#galeria img:hover{ /*Cambio al deslizar sobre la imagen*/
+    transform: scale(1.1); /*Aumenta el tamaño de la imagen*/
+    cursor: pointer; /*Coloca la mano sobre la imagen*/
+    border: 1px solid white;
+}
+
+legend{ /*Formato de formulario*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-left: 40px;
+    font-size: 20px;
+}
+#nombre{ /*Posicion de label nombre*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+
+}
+#nombre, #pais, #personaje, #mensaje{ /*Margen de separacion*/
+    margin-bottom: 10px;
+}
+#inputnombre, #selpais, #inputpersonaje{ /*Margen de separacion*/
+    margin-bottom: 20px;
+}
+#inputnombre{ /*Posicion de input nombre*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+#pais{ /*Posicion label pais*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;  
+}
+#selpais{ /*Posicion select pais*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;  
+}
+#personaje{ /*Posicion label Personaje*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;  
+}
+#inputpersonaje{ /*Posicion input personaje*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;  
+}
+#mensaje{ /*Posicion label mensaje*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    margin-left: 40px;
+}
+#opinion textarea{ /*Posicion texterea*/
+    resize: none;
+    width: 560px;
+    margin-right: 40px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 7;
+     
+}
+#publicar{ /*Formato boton publicar*/
+    font-family: 'Oswald', sans-serif;
+    background-color: #bc2f2b;
+    text-transform: uppercase; 
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+   
+}
+#publicar:hover{ /*Al deslizar sobre publicar*/
+    color: #bc2f2b;
+    background-color: rgba(255, 255, 255, 0.082);
+    transform: scale(1.1);
+}
+#opinion aside{ /*Posicion de boton publicar*/
+    display: flex;
+    margin: 0 40px 20px;
+    justify-content: flex-end;
+
+}
+fieldset{ /*Eliminar borde del formulario*/
+    border: none;
+} 
+footer{ /*Formato de seccion footer*/
+    background-color:#121212;
+    height: 100px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer p{ /*Posicion y formato de texto en footer*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;  
+    font-family: 'Oswald', sans-serif;
+    color: white; 
+}
+
+footer li{ /*Formato de lista para redes sociales*/
+    list-style-type: none;
+}
+footer nav{ /*Posicion de redes sociales*/
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3;
+}
+footer ul{ /*Formato de redes*/
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+footer li{ /*Tamaño iconos e imagen*/
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/redes.png");
+
+}
+#face{  /*Posicion imagen facebook*/
+    background-position: -50px 50px;    
+}
+#face:hover{ /*Posicion imagen facebook al deslizar*/
+    background-position: -50px 0;    
+}
+#whatsapp{ /*Posicion imagen whatsapp*/
+    background-position: -100px 50px;  
+}
+#whatsapp:hover{ /*Posicion imagen whatsapp al deslizar*/
+    background-position: -100px 0;  
+}
+#twitter{ /*Posicion imagen twitter*/
+    background-position: -150px 50px;  
+}
+#twitter:hover{ /*Posicion imagen twitter al deslizar*/
+    background-image: url("../img/redes.png");
+    background-position: -150px 0;  
+}
+#inst{ /*Posicion imagen instagram*/
+    background-position: 0 50px;    
+
+}
+#inst:hover{ /*Posicion imagen instagram al deslizar*/
+    background-position: 0 0;    
+}
+
+
